@@ -3,6 +3,9 @@ kind: Application
 metadata:
   name: example-app
   namespace: argocd
+  annotations:
+    notifications.argoproj.io/subscribe.on-deployed.github: ""
+
 spec:
   project: default
   source:
